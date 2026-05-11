@@ -1,5 +1,9 @@
 # Snake Game
 
+<p align="center">
+  <img src="assets/snake-banner.svg" alt="Animated snake" width="520">
+</p>
+
 Console Snake game written in C++17.
 
 ## Build
