@@ -18,9 +18,9 @@ void Space::drawPoint(const Point p) {
     if (_space[p.y][p.x] == PointType::kBoard) {
         std::cout << "#";
     } else if (_space[p.y][p.x] == PointType::kFood) {
-        std::cout << "◯";
+        std::cout << "\033[31m●\033[0m";
     } else if (_space[p.y][p.x] == PointType::kSnake) {
-        std::cout << "■";
+        std::cout << "\033[32m■\033[0m";
     } else {
         std::cout << " ";
     }
