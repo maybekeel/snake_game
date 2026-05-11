@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cstddef>
 #include <deque>
 
 #include "point.hpp"
@@ -16,6 +17,7 @@ public:
     Point nextHead() const;
     void setDirection(Direction);
     void move(bool);
+    size_t size() const;
 
 private:
 

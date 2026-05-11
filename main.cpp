@@ -64,6 +64,11 @@ int main() {
         }
 
         if (hasFood) {
+            if (snake.size() == space.size()) {
+                std::cout << "\033[?25h";
+                std::cout << "\nYou win!\n";
+                return 0;
+            }
             space.spawnFood();
         } else {
             space.changePoint(oldTail, Space::PointType::kEmpty);

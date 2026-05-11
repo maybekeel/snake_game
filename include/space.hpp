@@ -19,6 +19,7 @@ public:
     void spawnFood();
     PointType pointType(Point) const;
     auto changePoint(Point, PointType) -> bool;
+    size_t size() const;
 
 private:
 

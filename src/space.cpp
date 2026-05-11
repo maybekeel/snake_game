@@ -65,6 +65,9 @@ auto Space::changePoint(const Point p, const PointType type) -> bool {
     return true;
 }
 
+size_t Space::size() const {
+    return (width - 2) * (height - 2);
+}
 
 void Space::_init() {
     for (auto i = 0; i < height; i++) {

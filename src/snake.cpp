@@ -47,3 +47,7 @@ void Snake::move(bool food) {
     } 
 
 }
+
+size_t Snake::size() const {
+    return _body.size();
+}
